@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFC774;
+}
+
+.logo {
+    padding-left: 2vw;
+}
+
+.logo img {
+    width: 11vw;
+    height: 11vh;
+}
+
+nav {
+    width: 100%;
+    height: 10vh;
+    background-color: #EADAC0;
+    display: flex;
+    justify-content: space-between; /* Corrigido para 'space-between' */
+    align-items: center; /* Centraliza os elementos na vertical */
+}
+
+nav ul {
+    display: flex;
+    gap: 2vw; /* Espaço entre os itens da lista */
+}
+
+nav li {
+    list-style-type: none; /* Remove os marcadores de lista padrão */
+}
+
+.botãos button {
+    justify-content:space-between;
+    margin-left:1vw;
+    margin:1vw;
+    background-color: transparent;
+    border-radius: 7vw;
+}
+
+.fundo {
+    width:100%;
+    height:150vh;
+}
+
+.entrar {
+     border-color:#C22105;
+    border-style: solid;
+     color:#C22105;
+    padding:0.5vw;
+     padding-left:0.8vw;
+      padding-right:0.8vw;
+}
+
+.cadastro {
+   border-color:#807E2B;
+    border-style: solid;
+    color:#807E2B;
+     padding:0.5vw;
+     padding-left:0.8vw;
+      padding-right:0.8vw;
+}

@@ -6,10 +6,19 @@
 	<title>Parmergiano</title>
 	<link rel="stylesheet" href="landingPage.css">
 	<link rel="shortcut icon" href="img/logoAntiga.png" />
-
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nerko+One&display=swap" rel="stylesheet">
+<script src="script.js"></script>
 
 </head>
 <body>
+
+	<!--Fazer responsivo-->
+
 	<nav> 
 		<div class="logo"> 
 			<img src="img/logomarca.png">
@@ -27,13 +36,148 @@
 
 		<div class="botãos"> 
 
-			<button class="entrar">Entrar</button>
-			<button class="cadastro">Cadastrar</button>
+			<button onclick="modalentrar()" class="entrar">Entrar</button>
+			<button onclick="modalcadastrar()" class="cadastro">Cadastrar</button>
 
 		</div>
 	</nav>
 
-	<img class="fundo" src="img/fundo.png">
+	
+	<section class="modal">
+		<section class="fundo">
+			<img src="img/image 11.png" alt="">
+			<div class="head"><h1>Login</h1></div>
+		</section>
+		<div class="form">
+			<input type="text" id="inputNome" class="Modalinput" placeholder="Nome">
+			<input type="email" id="inputEmail" class="Modalinput" placeholder="Email">
+		</div>
+	</section>
 
+	<section class="fototext">
+		<img class="fundo" src="img/fundo.png" >
+
+		<section class="text">
+			<h1>Pizza boa?</h1>
+			<p>Vem com a Parmergiano! uma pizza<br> com qualidade, rapidez e com o preço<br> que cabe no seu bolso.</p>
+
+			<button onclick="modalentrar()">Entrar</button>
+		</section>
+
+	</section>
+
+	<section class="quemsomos">
+
+		<img class="homi" src="img/homi.png" alt="">
+		<section class="textquem">
+			<h1>Quem somos?</h1>
+			<p>Bem-vindo à Parmergeano, onde a paixão pela pizza é o ingrediente principal! Fundada em 2013, nossa pizzaria nasceu do amor pela culinária italiana e do desejo de criar experiências gastronômicas inesquecíveis.
+
+				Na Parmergeano, utilizamos apenas ingredientes frescos e selecionados para preparar nossas pizzas artesanais, assadas no forno a lenha, garantindo aquele sabor autêntico e inigualável. Cada fatia é uma celebração da tradição e da inovação, combinando receitas clássicas com toques contemporâneos.
+				
+				Peça agora e sinta-se no coração da Itália enquanto desfruta de uma deliciosa pizza, preparada com todo o carinho e dedicação que você merece. Parmergeano: mais do que uma pizzaria, um lugar para compartilhar momentos especiais.</p>
+				
+
+			
+		</section>
+
+	</section>
+
+
+	<!--Vou ter que arrumar e adicionar muita coisa aqui-->
+	<div class="textcard">
+		<h1>Cardápio</h1>
+	</div>
+	<section class="cardapio">
+	  <section class="carrosel">
+		<section class="slides" id="slides">
+			<div class="div1">
+			<div class="pizzas">
+			<img id="calabresa" src="img/calabresa.png" alt="">
+			<label for="calabresa">Calabresa</label>
+			</div>
+			<div class="pizzas">
+				<img id="mussarela" src="img/mussarela.png" alt="">
+				<label for="mussarela">Mussarela</label>
+			</div>
+			<div class="pizzas">
+				<img id="pepperoni" src="img/pepperoni.png" alt="">
+				<label for="pepperoni">Pepperoni</label>
+			</div>
+			
+			
+			
+		</div>
+		<div class="div2" id="div2" >
+			<div class="pizzas">
+			<img id="3queijos" src="img/pizza3quiejos.png" alt="">
+			<label for="3queijos">3 Queijos</label>
+			</div>
+			<div class="pizzas">
+			<img id="lacasa" src="img/pizzalacasa.png" alt="">
+			<label for="lacasa">La casa</label>
+			</div>
+			<div class="pizzas">
+			<img id="toscana" src="img/toscana.png" alt="">
+			<label for="toscana">Toscana</label>
+		</div>
+			
+		</div>
+		
+		</section>
+		
+	  </section>
+	  
+	</section>
+	<div class="btnncarrosel">
+	<button class="btncarrosel"onclick="esquerda()"> < </button><button class="btncarrosel"onclick="direita()">></button>
+</div>
+	  
+	  
+	<footer>
+		<section class="fundo">
+
+			 
+
+			<section class="links">
+				<hr>
+			
+				<section class="contato">
+					<img class="logo" src="img/🦆 icon _phone_.png" alt=""><h5>Contato</h5>
+					<!--imgs de rede sociais com link-->
+				</section>
+
+				
+					<section class="admin">
+						<header><img class="logo"src="img/perfil 1.png" alt=""><h5>É admin?</h5></header>
+						
+						
+							<button onclick="modalentrar()">Entrar</button>
+						
+					</section>
+			
+
+				<section class="dev">
+					<header>
+						<img class="logo" src="img/Vector.png" alt=""><h5>Desenvolvedora</h5>
+					</header>
+
+					<img class="git" src="img/image 5.png" alt="">
+					
+
+				</section>
+				<div class="img">
+				<img class="gatin" src="img/image 6.png" alt="">
+				</div>
+				<hr>
+			</section>
+
+		</section>
+
+
+	</footer>
+
+	
+	
 </body>
 </html>

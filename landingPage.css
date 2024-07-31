@@ -1,63 +1,459 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    margin: 0;
-    padding: 0;
+   
     background-color: #FFC774;
-}
+  }
+/*Começa a NAV*/
+  .logo {
+    padding-left: 3vw;
+  }
 
-.logo {
-    padding-left: 2vw;
-}
+  .logo img {
+    width: 15vw;
+    height: 10vh;
+  }
 
-.logo img {
-    width: 11vw;
-    height: 11vh;
-}
+  .nerko-one-regular {
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
 
-nav {
+  .montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  nav {
+    font-family: 'Montserrat';
     width: 100%;
     height: 10vh;
     background-color: #EADAC0;
     display: flex;
     justify-content: space-between; /* Corrigido para 'space-between' */
     align-items: center; /* Centraliza os elementos na vertical */
-}
+    position: fixed;
+    z-index: 10;
+  }
 
-nav ul {
+  nav ul {
     display: flex;
-    gap: 2vw; /* Espaço entre os itens da lista */
-}
+    gap: 8vw; /* Espaço entre os itens da lista */
+  }
 
-nav li {
+  nav li {
     list-style-type: none; /* Remove os marcadores de lista padrão */
-}
+    cursor: pointer;
+    color: #550D00;
+  }
 
-.botãos button {
-    justify-content:space-between;
-    margin-left:1vw;
-    margin:1vw;
+  .botãos button {
+    text-align: center;
+    justify-content: space-between;
+    margin-left: 1vw;
+    margin: 1vw;
     background-color: transparent;
-    border-radius: 7vw;
-}
+    border-radius: 10vw;
+    border-width: 0.2vw;
+    font-weight: bold;
+    letter-spacing: 0.02vw;
+    
+  }
 
-.fundo {
-    width:100%;
-    height:150vh;
+button {
+    cursor: pointer;
 }
 
 .entrar {
-     border-color:#C22105;
-    border-style: solid;
-     color:#C22105;
-    padding:0.5vw;
-     padding-left:0.8vw;
-      padding-right:0.8vw;
+  border-color: #C22105;
+  border-style: solid;
+  color: #C22105;
+  padding: 0.5vw;
+  padding-left: 0.8vw;
+  padding-right: 0.8vw;
+  transition: 0.5s;
+}
+
+.entrar:hover {
+  background-color: #C22105;
+  color: white;
 }
 
 .cadastro {
-   border-color:#807E2B;
-    border-style: solid;
-    color:#807E2B;
-     padding:0.5vw;
-     padding-left:0.8vw;
-      padding-right:0.8vw;
+  border-color: #807E2B;
+  border-style: solid;
+  color: #807E2B;
+  padding: 0.5vw;
+  padding-left: 0.8vw;
+  padding-right: 0.8vw;
+  transition: 0.5s;
 }
+
+.cadastro:hover {
+  background-color: #807E2B;
+  color: white;
+}
+
+/*Termina NAV e começa a parte INICIAL*/
+
+  .fundo {
+    width: 100%;
+    height: 150vh;
+    position: relative; /* Adiciona posição relativa à imagem */
+  }
+
+  .text {
+    font-family: "Nerko One";
+    color: white;
+    z-index: 6;
+    position: absolute; /* Adiciona posição absoluta ao texto */
+    top: 50%; /* Centraliza verticalmente */
+    left: 30%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta a posição para centralizar */
+    text-align:start; /* Centraliza o texto */
+    margin-top: 4vw;
+  }
+
+  .text h1 {
+    font-size: 5vw;
+    letter-spacing: 0.5vw;
+    margin: 0;
+  }
+
+  .text p {
+    font-size: 2vw;
+    margin: 0;
+}
+
+.text button {
+    border:none;
+    border-radius: 1vw;
+    font-size: 1.5vw;
+    color:#C22105 ;
+    font-weight: bold;
+    background-color: #3F1604;
+    padding: 1vw;
+    width: 10vw;
+    margin-top: 3vw;
+    transition: 0.5s;
+}
+
+.text button:hover {
+  background-color: #807E2B;
+  color: white;
+}
+
+/*Termina parte INICIAL e começa a parte QUEM SOMOS*/
+
+.homi {
+    width: 60vw;
+    height: 75vh;
+    margin-top: 10vw;
+    
+}
+.quemsomos {
+    display: flex;
+    width: 92vw;
+    height: 40vh;
+    border-radius: 1vw;
+  }
+
+  .textquem {
+    font-size: 4vw;
+    font-family: "Nerko One";
+    color: #740005;
+    margin-top: 10vw;
+  }
+
+  .quemsomos p {
+    font-size: 2vw;
+    max-height: 30vh;
+    margin: 0;
+    overflow-y: scroll;
+    scrollbar-width: none; /* Oculta a barra de rolagem no Firefox */
+    position: relative;
+    background: linear-gradient(to bottom, rgba(255, 158, 1, 0), #e3b267);
+    color:  #5d0a0e
+  }
+  
+  /* Oculta a barra de rolagem no WebKit (Chrome, Safari) */
+  .quemsomos p::-webkit-scrollbar {
+    display: none;
+  }
+
+/*Termna QUEM SOMOS e começa CARDAPIO*/
+.textcard {
+  margin-top: 32vw;
+  font-size: 3.5vw;
+  font-family: "Nerko One";
+  color: #740005;
+  margin-left: 4vw;
+}
+.cardapio {
+display: flex;
+justify-content: center;
+margin-top: 2vw;
+}
+
+.pizzas {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  font-family: "Nerko One";
+  color: #740005;
+  font-weight: bold;
+}
+.carrosel {
+  width: 80%;
+  height: 12vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  overflow: hidden;
+}
+.slides {
+  display: flex;
+  flex-direction: row;
+  margin-left: 70vw;
+}
+.slides img {
+  width: 15vw;
+  height: 20vh;
+  transition: 1s;
+
+}
+.div1{
+  
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+}
+.div2 {
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+  margin-left: 20vw;
+  
+}
+
+.btncarrosel {
+  border:none;
+  border-radius: 1vw;
+  font-size: 1.5vw;
+  color:#C22105 ;
+  font-weight: bold;
+  background-color: #3F1604;
+  padding: 1vw;
+  width: 10vw;
+  margin-top: 3vw;
+  transition: 0.5s;
+}
+.btncarrosel:hover {
+background-color: #807E2B;
+color: white;
+}
+
+.btnncarrosel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+}
+
+/*Termina CARDAPIO  e começa FOOTER*/
+
+footer .fundo {
+  width: 100%;
+  height: 112vh;
+  margin-top: 10vw;
+  background-image: linear-gradient(to bottom, #3F1604, #2D0204);
+  font-size: 4vw;
+  font-family: "Nerko One";
+  color: white;
+}
+
+footer .links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5vw;
+  gap: 3vw;
+}
+
+footer .logo {
+  width: 2vw;
+  height: 4vh;
+}
+
+.contato {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+}
+
+.admin {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin header {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+}
+
+.admin button {
+  background-color: white;
+  width: 12vw;
+  height: 8vh;
+  font-weight: bold;
+  font-size: 1.5vw;
+  margin-left: 3vw;
+  margin-top: 1vw;
+  border: 2px solid #550D00;
+  color: #550D00;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.admin button:hover {
+  background-color: #751402;
+  color: #FFC774;
+}
+
+.dev {
+  display: flex;
+  flex-direction: column;
+}
+
+.dev header {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+}
+
+.dev .git {
+  width: 6vw;
+  height: 10vh;
+  margin-left:3vw;
+  margin-top: 1vw;
+  cursor: pointer;
+}
+
+.gatin {
+  display: flex;
+  width: 20vw;
+  margin-right: 2vw;
+  position: fixed;
+  height: 40vh;
+  position: absolute;
+}
+
+.fundo .img {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  align-items: center;
+  z-index: 20;
+  margin-bottom: 7vw;
+  
+
+}
+
+/*MODAL*/
+.modal {
+  background-color: rgba(0, 0, 0, 0.607);
+  z-index: 21;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.modal img {
+  width: 10vw;
+  height: 20vh;
+  position: absolute;
+  top: 8%; 
+  left: 12%; 
+  transform: translate(-50%, -50%); 
+}
+
+.fundo .head {
+  display: flex;
+  justify-content: center; 
+  text-align: center;
+  color: #740005;
+  font-size: 4vw;
+  font-family: "Nerko One";
+  width: 100%; 
+  margin-top: 2vw;
+}
+
+.modal .form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2vw;
+  z-index: 25;
+}
+
+.form input {
+  width: 20vw;
+  height: 8vh;
+  border-radius: 2vw;
+  padding: 0.5vw;
+  border: none;
+  background-color:#f6917fd7;
+}
+
+
+.modal .fundo {
+  background-image: linear-gradient(to bottom, #C22105, #831704);
+  width: 40vw;
+  height: 90vh;
+  position: fixed;
+  z-index: 22;
+  top: 26vw; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  border-radius: 6vw;
+}
+
+
+/* RESPONSIVO*/
+@media screen and (max-width: 360px) and (max-height:640px) {
+  .fundo {
+    width: 100%;
+    height: 30vh;
+  }
+
+  nav {
+    visibility: hidden;
+    
+  }
+
+  .text {
+    margin: 25vw;
+    top: 0;
+    left: 0;
+    transform: 0;
+  }
+  
+
+
+}
+
